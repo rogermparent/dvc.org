@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
 import { useLocation } from '@reach/router'
 import cn from 'classnames'
 import { Collapse } from 'react-collapse'
@@ -10,7 +11,6 @@ import DownloadButton from '../../../DownloadButton'
 import Link from '../../../Link'
 
 import {
-  structure,
   getParentsListFromPath,
   getPathWithSource
 } from '../../../../utils/shared/sidebar'
@@ -122,6 +122,18 @@ const SidebarMenu: React.FC<ISidebarMenuProps> = ({ currentPath, onClick }) => {
     }
   }, [])
   useEffect(scrollToActiveItem, [location.pathname])
+
+  const query = useStaticQuery(graphql`
+    query SidebarContent {
+      jsonFile(sourcePath: { eq: "docs/sidebar.json" }) {
+        content
+      }
+    }
+  `)
+
+  const {
+    jsonFile: { content: structure }
+  } = query
 
   return (
     <div

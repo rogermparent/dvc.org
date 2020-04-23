@@ -1,9 +1,11 @@
 [
   {
-    "slug": "home"
+    "slug": "home",
+    "source": "index.md"
   },
   {
     "slug": "install",
+    "source": "install/index.md",
     "children": [
       {
         "label": "Mac OS",
@@ -24,9 +26,11 @@
   },
   {
     "slug": "tutorials",
+    "source": "tutorials/index.md",
     "children": [
       {
         "slug": "get-started",
+        "source": false,
         "tutorials": {
           "katacoda": "https://katacoda.com/dvc/courses/get-started/initialize"
         },
@@ -75,6 +79,7 @@
       {
         "slug": "deep",
         "label": "Deep Dive Tutorial",
+        "source": "deep/index.md",
         "tutorials": {
           "katacoda": "https://katacoda.com/dvc/courses/tutorials/pipelines"
         },
@@ -96,6 +101,7 @@
   },
   {
     "slug": "use-cases",
+    "source": "use-cases/index.md",
     "children": [
       {
         "label": "Versioning Data & Model Files",
@@ -111,6 +117,7 @@
   },
   {
     "slug": "user-guide",
+    "source": "user-guide/index.md",
     "children": [
       {
         "label": "Files and Directories",
@@ -137,6 +144,7 @@
       {
         "label": "Contributing",
         "slug": "contributing",
+        "source": false,
         "children": [
           {
             "label": "DVC Core Project",
@@ -169,6 +177,7 @@
   },
   {
     "slug": "command-reference",
+    "source": "command-reference/index.md",
     "children": [
       {
         "label": "add",
@@ -177,6 +186,7 @@
       {
         "label": "cache",
         "slug": "cache",
+        "source": "cache/index.md",
         "children": [
           {
             "label": "cache dir",
@@ -250,6 +260,7 @@
       {
         "label": "metrics",
         "slug": "metrics",
+        "source": "metrics/index.md",
         "children": [
           {
             "label": "metrics add",
@@ -280,6 +291,7 @@
       {
         "label": "params",
         "slug": "params",
+        "source": "params/index.md",
         "children": [
           {
             "label": "params diff",
@@ -290,6 +302,7 @@
       {
         "label": "pipeline",
         "slug": "pipeline",
+        "source": "pipeline/index.md",
         "children": [
           {
             "label": "pipeline list",
@@ -312,6 +325,7 @@
       {
         "label": "remote",
         "slug": "remote",
+        "source": "remote/index.md",
         "children": [
           {
             "label": "remote add",
@@ -376,6 +390,7 @@
   {
     "slug": "api-reference",
     "label": "Python API Reference",
+    "source": "api-reference/index.md",
     "children": [
       {
         "slug": "get_url",
@@ -394,6 +409,7 @@
   {
     "slug": "understanding-dvc",
     "label": "Understanding DVC",
+    "source": false,
     "children": [
       "collaboration-issues",
       "existing-tools",
@@ -409,6 +425,7 @@
   },
   {
     "slug": "changelog",
+    "source": false,
     "children": [
       {
         "label": "v0.12 - v0.18",

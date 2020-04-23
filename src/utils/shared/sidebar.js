@@ -188,6 +188,7 @@ function getParentsListFromPath(path) {
 
 module.exports = {
   structure: normalizedSidebar,
+  normalizeSidebar,
   findChildWithSource,
   getItemByPath,
   getItemBySource,
