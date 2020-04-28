@@ -54,6 +54,7 @@ async function prefixIsEmpty(prefix = s3Prefix) {
       .promise()
     return false
   } catch (e) {
+    console.log(e)
     return true
   }
 }
