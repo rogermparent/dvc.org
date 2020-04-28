@@ -2,29 +2,32 @@
 
 const path = require('path')
 const s3 = require('s3-client')
-const { s3Prefix, s3Bucket } = require('../src/server/config')
+const { s3Prefix, s3Bucket: defaultS3Bucket } = require('../src/server/config')
 const { remove, move, ensureDir } = require('fs-extra')
 
 const {
-  AWS_REGION,
-  AWS_ACCESS_KEY_ID,
-  AWS_SECRET_ACCESS_KEY,
+  CACHE_AWS_REGION,
+  CACHE_AWS_ACCESS_KEY_ID,
+  CACHE_AWS_SECRET_ACCESS_KEY,
+  CACHE_S3_BUCKET,
   HEROKU_APP_NAME
 } = process.env
 
+const s3Bucket = CACHE_S3_BUCKET || defaultS3Bucket
+
 const s3Client = s3.createClient({
   maxAsyncS3: 50,
-  region: AWS_REGION,
-  accessKeyId: AWS_ACCESS_KEY_ID,
-  secretAccessKey: AWS_SECRET_ACCESS_KEY
+  region: CACHE_AWS_REGION,
+  accessKeyId: CACHE_AWS_ACCESS_KEY_ID,
+  secretAccessKey: CACHE_AWS_SECRET_ACCESS_KEY
 })
 
 console.log({
-  AWS_REGION,
+  AWS_REGION: CACHE_AWS_REGION,
   HEROKU_APP_NAME,
   s3Bucket,
   s3Prefix,
-  hasCreds: Boolean(AWS_ACCESS_KEY_ID && AWS_SECRET_ACCESS_KEY)
+  hasCreds: Boolean(CACHE_AWS_ACCESS_KEY_ID && CACHE_AWS_SECRET_ACCESS_KEY)
 })
 
 const rootDir = process.cwd()
