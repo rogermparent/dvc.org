@@ -4,6 +4,7 @@ const blog = require('./models/blog')
 const authors = require('./models/authors')
 const imageSourcePaths = require('./models/image-source-paths')
 const jsonFiles = require('./models/json-files')
+const sidebar = require('./models/sidebar')
 
 const models = [
   markdownContent,
@@ -11,7 +12,8 @@ const models = [
   blog,
   authors,
   imageSourcePaths,
-  jsonFiles
+  jsonFiles,
+  sidebar
 ]
 
 module.exports = models

@@ -126,14 +126,14 @@ const SidebarMenu: React.FC<ISidebarMenuProps> = ({ currentPath, onClick }) => {
 
   const query = useStaticQuery(graphql`
     query SidebarContent {
-      jsonFile(sourcePath: { eq: "docs/sidebar.json" }) {
+      sidebar {
         content
       }
     }
   `)
 
   const {
-    jsonFile: { content: structure }
+    sidebar: { content: structure }
   } = query
 
   return (
