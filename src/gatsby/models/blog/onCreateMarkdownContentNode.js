@@ -4,7 +4,7 @@ function createMarkdownBlogNode(api, { parentNode }) {
   if (parentNode.relativeDirectory.split('/')[0] !== 'blog') return
   const { node, actions, createNodeId, createContentDigest } = api
   const { createNode, createParentChildLink } = actions
-  const { frontmatter, rawMarkdownBody } = node
+  const { frontmatter, rawBody } = node
   const {
     date,
     tags,
@@ -23,7 +23,7 @@ function createMarkdownBlogNode(api, { parentNode }) {
   const pagePath = '/blog/' + slug
   const fieldData = {
     slug: pagePath,
-    rawMarkdownBody,
+    rawBody,
     date,
     tags,
     title,

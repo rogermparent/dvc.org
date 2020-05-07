@@ -41,7 +41,7 @@ const createPages = async ({ graphql, actions }) => {
           edges {
             node {
               id
-              rawMarkdownBody
+              rawBody
               slug
             }
           }
@@ -58,9 +58,9 @@ const createPages = async ({ graphql, actions }) => {
 
   docsResponse.data.docs.edges.forEach(doc => {
     const {
-      node: { id, slug, rawMarkdownBody }
+      node: { id, slug, rawBody }
     } = doc
-    const headings = parseHeadings(rawMarkdownBody)
+    const headings = parseHeadings(rawBody)
 
     if (slug) {
       actions.createPage({

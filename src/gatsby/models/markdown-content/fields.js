@@ -1,13 +1,16 @@
-const { parentResolverPassthrough } = require('gatsby-plugin-parent-resolvers')
+const {
+  parentResolverPassthrough,
+  parentPassthrough
+} = require('gatsby-plugin-parent-resolvers')
 
 module.exports = {
-  html: {
+  body: {
     type: 'String!',
     resolve: parentResolverPassthrough()
   },
-  htmlAst: {
-    type: 'JSON!',
-    resolve: parentResolverPassthrough()
+  html: {
+    type: 'String!',
+    resolve: parentPassthrough()
   },
   timeToRead: {
     type: 'String!',

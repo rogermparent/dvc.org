@@ -8,7 +8,7 @@ const callOnModels = require('../../utils/models')
   all other Models with a function named "onCreateMarkdownContentNode" exposed.
 
   onCreateMarkdownContentNode is a modified version of onCreateNode, but it only
-  runs on MarkdownRemark nodes that come from a gatsby-source-filesystem
+  runs on Mdx nodes that come from a gatsby-source-filesystem
   instance named "content" and also passes down the parent File node that it
   already had to fetch.
 
@@ -50,10 +50,10 @@ const callOnModels = require('../../utils/models')
 module.exports = {
   async onCreateNode(api, { models }) {
     const { node, getNode } = api
-    if (node.internal.type === 'MarkdownRemark') {
+    if (node.internal.type === 'Mdx') {
       const parentNode = getNode(node.parent)
       const { sourceInstanceName } = parentNode
-      // Only operate on MarkdownRemark nodes from the file instance named "content".
+      // Only operate on Mdx nodes from the file instance named "content".
       if (sourceInstanceName === 'content') {
         // Do any actions to matching content nodes within this scope.
 

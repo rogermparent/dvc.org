@@ -2,13 +2,13 @@ function createMarkdownAuthorNode(api, { parentNode }) {
   if (parentNode.relativeDirectory.split('/')[0] !== 'authors') return
   const { node, actions, createNodeId, createContentDigest } = api
   const { createNode, createParentChildLink } = actions
-  const { frontmatter, rawMarkdownBody } = node
+  const { frontmatter, rawBody } = node
   const { path, name, avatar } = frontmatter
   const { relativePath } = parentNode
 
   const fieldData = {
     sourcePath: relativePath,
-    rawMarkdownBody,
+    rawBody,
     path,
     name,
     avatar
