@@ -56,7 +56,7 @@ Our engineer and technical writer Jorge reported:
 > several fields who are learning and adopting DVC with their teams – including
 > several working with privacy-sensitive medical records, very cool!
 
-<hr>
+<hr />
 
 ## From the community
 
