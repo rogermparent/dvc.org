@@ -7,7 +7,6 @@ require('./config/prismjs/usage')
 
 const apiMiddleware = require('./src/server/middleware/api')
 const redirectsMiddleware = require('./src/server/middleware/redirects')
-const makeFeedHtml = require('./plugins/utils/makeFeedHtml')
 const { BLOG } = require('./src/consts')
 
 const title = 'Data Version Control · DVC'
@@ -49,11 +48,12 @@ const plugins = [
     }
   },
   {
-    resolve: 'gatsby-transformer-remark',
+    resolve: 'gatsby-plugin-mdx',
     options: {
-      plugins: [
+      extensions: ['.md'],
+      gatsbyRemarkPlugins: [
         'gatsby-remark-embedder',
-        'gatsby-remark-dvc-linker',
+        require.resolve('./plugins/gatsby-remark-dvc-linker'),
         {
           resolve: 'gatsby-remark-prismjs',
           options: {
@@ -90,8 +90,8 @@ const plugins = [
           }
         },
         'gatsby-remark-responsive-iframe',
-        'resize-image-plugin',
-        'external-link-plugin'
+        require.resolve('./plugins/resize-image-plugin'),
+        require.resolve('./plugins/external-link-plugin')
       ]
     }
   },
@@ -131,7 +131,7 @@ const plugins = [
                 sort: { fields: [date], order: DESC }
               ) {
                 nodes {
-                  htmlAst
+                  html
                   slug
                   title
                   date
@@ -142,7 +142,7 @@ const plugins = [
           `,
           serialize: ({ query: { site, allBlogPost } }) => {
             return allBlogPost.nodes.map(node => {
-              const html = makeFeedHtml(node.htmlAst, site.siteMetadata.siteUrl)
+              const html = node.html
               return Object.assign(
                 {},
                 {
