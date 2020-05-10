@@ -2,6 +2,11 @@ const { imageWrapperClass } = require('gatsby-remark-images/constants')
 const unified = require('unified')
 const { convertHastToHtml } = require('./convertHast.js')
 const { select, selectAll } = require('hast-util-select')
+const remove = require('unist-util-remove')
+const remark2rehype = require('remark-rehype')
+
+const stripMDX = () => tree =>
+  remove(tree, ['import', 'export', 'jsx', 'comment'])
 
 const rootToAbsolute = siteUrl => tree => {
   selectAll('a', tree).forEach(node => {
@@ -17,6 +22,11 @@ const rootToAbsolute = siteUrl => tree => {
   return tree
 }
 
+/*
+   All images processed by Gatsby to be responsive are "unwrapped" into
+   their fallback 'img' nodes, as RSS doesn't work with the tricks that
+   true HTML does.
+*/
 const unwrapImages = () => tree => {
   selectAll(`.${imageWrapperClass}`, tree).forEach(node => {
     // Set the fallback image as the wrapper's only child, and then
@@ -35,18 +45,14 @@ const unwrapImages = () => tree => {
   return tree
 }
 
-function makeFeedHtml(htmlAst, siteUrl) {
-  // We add the rootToAbsolute processor before usage because it depends on siteUrl.
+function makeFeedHtml(mdxAST, siteUrl) {
   return convertHastToHtml(
     unified()
-      /*
-         All images processed by Gatsby to be responsive are "unwrapped" into
-         their fallback 'img' nodes, as RSS doesn't work with the tricks that
-         true HTML does.
-       */
+      .use(stripMDX)
+      .use(remark2rehype)
       .use(unwrapImages)
       .use(rootToAbsolute, siteUrl)
-      .runSync(htmlAst)
+      .runSync(mdxAST)
   )
 }
 

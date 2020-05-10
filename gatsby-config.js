@@ -9,6 +9,8 @@ const apiMiddleware = require('./src/server/middleware/api')
 const redirectsMiddleware = require('./src/server/middleware/redirects')
 const { BLOG } = require('./src/consts')
 
+const makeFeedHtml = require('./plugins/utils/makeFeedHtml.js')
+
 const title = 'Data Version Control · DVC'
 const description =
   'Open-source version control system for Data Science and Machine Learning ' +
@@ -121,6 +123,18 @@ const plugins = [
   {
     resolve: `gatsby-plugin-feed`,
     options: {
+      query: `
+        {
+          site {
+            siteMetadata {
+              title
+              description
+              siteUrl
+              site_url: siteUrl
+            }
+          }
+        }
+      `,
       feeds: [
         {
           description,
@@ -131,7 +145,7 @@ const plugins = [
                 sort: { fields: [date], order: DESC }
               ) {
                 nodes {
-                  html
+                  mdxAST
                   slug
                   title
                   date
@@ -142,7 +156,7 @@ const plugins = [
           `,
           serialize: ({ query: { site, allBlogPost } }) => {
             return allBlogPost.nodes.map(node => {
-              const html = node.html
+              const html = makeFeedHtml(node.mdxAST, site.siteMetadata.site_url)
               return Object.assign(
                 {},
                 {
@@ -159,19 +173,7 @@ const plugins = [
           },
           title
         }
-      ],
-      query: `
-          {
-            site {
-              siteMetadata {
-                title
-                description
-                siteUrl
-                site_url: siteUrl
-              }
-            }
-          }
-    `
+      ]
     }
   },
   {
