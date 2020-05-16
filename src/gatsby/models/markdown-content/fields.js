@@ -8,9 +8,13 @@ module.exports = {
     type: 'String!',
     resolve: parentResolverPassthrough()
   },
+  mdxAST: {
+    type: 'JSON!',
+    resolve: parentResolverPassthrough()
+  },
   html: {
     type: 'String!',
-    resolve: parentPassthrough()
+    resolve: parentResolverPassthrough()
   },
   timeToRead: {
     type: 'String!',

@@ -13,11 +13,11 @@ export interface IHeading {
 interface IDocumentationProps {
   path: string
   headings: Array<IHeading>
-  htmlAst: object
+  body: string
 }
 
 const Documentation: React.FC<IDocumentationProps> = ({
-  htmlAst,
+  body,
   path,
   headings
 }) => {
@@ -27,7 +27,7 @@ const Documentation: React.FC<IDocumentationProps> = ({
   return (
     <>
       <Markdown
-        htmlAst={htmlAst}
+        body={body}
         prev={prev}
         next={next}
         githubLink={githubLink}

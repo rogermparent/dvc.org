@@ -6,8 +6,12 @@ interface IMarkdownProps {
   html: string
 }
 
-const Markdown: React.FC<IMarkdownProps> = ({ html }) => (
-  <div className={styles.wrapper} dangerouslySetInnerHTML={{ __html: html }} />
+import { MDXRenderer } from 'gatsby-plugin-mdx'
+
+const Markdown: React.FC<IMarkdownProps> = ({ body }) => (
+  <div className={styles.wrapper}>
+    <MDXRenderer>{body}</MDXRenderer>
+  </div>
 )
 
 export default Markdown

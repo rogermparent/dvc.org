@@ -19,9 +19,10 @@ import PageContent from '../../PageContent'
 import SubscribeSection from '../../SubscribeSection'
 
 import styles from './styles.module.css'
+const { MDXRenderer } = 'gatsby-plugin-mdx'
 
 const Post: React.FC<IBlogPostData> = ({
-  html,
+  body,
   timeToRead,
   title,
   date,
@@ -65,10 +66,7 @@ const Post: React.FC<IBlogPostData> = ({
             <div className={styles.headContent}>
               <h1 className={styles.title}>{title}</h1>
               {descriptionLong ? (
-                <div
-                  className={styles.description}
-                  dangerouslySetInnerHTML={{ __html: descriptionLong }}
-                />
+                <div className={styles.description}>{descriptionLong}</div>
               ) : (
                 <div className={styles.description}>{description}</div>
               )}
@@ -88,7 +86,7 @@ const Post: React.FC<IBlogPostData> = ({
           )}
 
           <div className={styles.content}>
-            <Markdown html={html} />
+            <Markdown body={body} />
           </div>
           {tags && (
             <div className={styles.tags}>

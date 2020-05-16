@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useRef } from 'react'
 import cn from 'classnames'
 import { navigate } from '@reach/router'
-import rehypeReact from 'rehype-react'
+import { MDXRenderer } from 'gatsby-plugin-mdx'
 import Collapsible from 'react-collapsible'
 
 import Link from '../../Link'
@@ -50,15 +50,8 @@ const Abbr: React.FC<{ children: [string] }> = ({ children }) => {
   return <Tooltip text={children[0]} />
 }
 
-const renderAst = new rehypeReact({
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  createElement: React.createElement as any,
-  Fragment: React.Fragment,
-  components: { details: Details, abbr: Abbr, a: Link }
-}).Compiler
-
 interface IMarkdownProps {
-  htmlAst: object
+  body: string
   githubLink: string
   tutorials: { [type: string]: string }
   prev?: string
@@ -66,7 +59,7 @@ interface IMarkdownProps {
 }
 
 const Markdown: React.FC<IMarkdownProps> = ({
-  htmlAst,
+  body,
   prev,
   next,
   tutorials,
@@ -120,7 +113,9 @@ const Markdown: React.FC<IMarkdownProps> = ({
         <i className={cn(sharedStyles.buttonIcon, styles.githubIcon)} /> Edit on
         GitHub
       </Link>
-      <div className="markdown-body">{renderAst(htmlAst)}</div>
+      <div className="markdown-body">
+        <MDXRenderer>{body}</MDXRenderer>
+      </div>
       <div className={styles.navButtons}>
         <Link className={styles.navButton} href={prev || '#'}>
           <i className={cn(styles.navButtonIcon, styles.prev)} />

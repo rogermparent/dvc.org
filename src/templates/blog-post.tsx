@@ -24,7 +24,7 @@ export interface IBlogPostHeroPic {
 
 export interface IBlogPostData {
   id: string
-  html: string
+  body: string
   timeToRead: string
   slug: string
   title: string
@@ -77,7 +77,7 @@ export const pageQuery = graphql`
     blogPost(id: { eq: $id }) {
       id
       slug
-      html
+      body
       timeToRead
       title
       date(formatString: "MMMM DD, YYYY")
