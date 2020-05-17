@@ -88,7 +88,7 @@ Specifically, the blog is a case study about version control when a dataset
 grows over time. If you're looking for a DVC tutorial geared for data
 scientists, this might be up your alley.
 
-<external-link
+<ExternalLink
 href="https://towardsdatascience.com/start-version-controlling-your-machine-learning-datasets-2b872e109856"
 title="Start Version Controlling your Machine Learning Datasets"
 description="Make your machine learning and data science projects reproducible with open source tools."
@@ -110,7 +110,7 @@ writes:
 In this blog, DVC gets a shout-out as Andrew’s preferred data versioning tool,
 used in conjunction with Git for versioning Python code. Thanks!
 
-<external-link
+<ExternalLink
 href="https://towardsdatascience.com/down-with-technical-debt-clean-python-for-data-scientists-aa7592eff7fc"
 title="Down with technical debt! Clean Python for data scientists."
 description=""
@@ -135,7 +135,7 @@ Sharif gives some recommendations for tools that work especially well for ML,
 and he writes that DVC is the “perfect combination for versioning your code and
 data.” Thanks, Sharif! We think you’re perfect, too.
 
-<external-link
+<ExternalLink
 href="https://towardsdatascience.com/down-with-technical-debt-clean-python-for-data-scientists-aa7592eff7fc"
 title="MLOps Done Right"
 description="What is MLOps? Why is it so important? How to do it right!"

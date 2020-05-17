@@ -77,7 +77,7 @@ A brilliant comprehensive read on the current data management issues. It might
 be the best article we have ever read on this subject. Every word strongly
 resonates with our vision and ideas behind DVC. Highly recommended by DVC team!
 
-<external-link
+<ExternalLink
 href="https://towardsdatascience.com/the-rise-of-dataops-from-the-ashes-of-data-governance-da3e0c3ac2c4"
 title="The Rise of DataOps (from the ashes of Data Governance)"
 description="Legacy Data Governance is broken in the ML era. Let’s rebuild it as an engineering discipline to drive…"
@@ -92,7 +92,7 @@ image="/uploads/images/2019-06-26/the-rise-of-data-ops.png" />
 - **[First Impressions of Data Science Version Control (DVC)](https://medium.com/@christopher.samiullah/first-impressions-of-data-science-version-control-dvc-fe96ab29cdda)
   by [Christopher Samiullah](https://christophergs.github.io/)**
 
-<external-link
+<ExternalLink
 href="https://medium.com/@christopher.samiullah/first-impressions-of-data-science-version-control-dvc-fe96ab29cdda"
 title="First Impressions of Data Science Version Control (DVC)"
 description="A Powerful New Machine Learning Tool"
@@ -116,7 +116,7 @@ image="/uploads/images/2019-06-26/first-impressions-of-data-science-version-cont
 - **[Becoming a machine learning company means investing in foundational technologies](https://www.oreilly.com/ideas/becoming-a-machine-learning-company-means-investing-in-foundational-technologies)
   by [Ben Lorica](https://www.oreilly.com/people/4e7ad-ben-lorica)**
 
-<external-link
+<ExternalLink
 href="https://www.oreilly.com/ideas/becoming-a-machine-learning-company-means-investing-in-foundational-technologies"
 title="Becoming a machine learning company means investing in foundational technologies"
 description="Get expert knowledge on the tools and technologies you need to put your data strategies to work. Join us at the…"

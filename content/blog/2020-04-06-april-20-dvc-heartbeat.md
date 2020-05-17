@@ -67,7 +67,7 @@ about a DVC data science project,
 [building a public dataset of posts](https://dvc.org/blog/a-public-reddit-dataset)
 from the "Am I the Asshole?" subreddit.
 
-<external-link
+<ExternalLink
 href="https://open.spotify.com/episode/5JzIZLqnTF5aDh2B6UTemo?si=6LTQxq4xSDe0vhTpSLs1Jw"
 title="The Data Stream #3 - Who is the A-hole? With Elle"
 description="Ever wonder if it's possible to train a model to discover whether your friends are assholes or not? Today Elle comes on the show to talk about her project building a classifier to predict the results from reddit's hottest advice community: Am I the Asshole (or AITA for short)."
@@ -105,7 +105,7 @@ see a detailed post for the R-using data scientist (for more about R with DVC,
 see
 [Marija Ilić's post](https://dvc.org/blog/r-code-and-reproducible-model-development-with-dvc))!
 
-<external-link
+<ExternalLink
 href="https://mribeirodantas.xyz/blog/index.php/2020/03/05/r-dvc-and-rmarkdown/"
 title="Manage your Data Science Project in R"
 description="A simple project tutorial with R/RMarkdown, Packrat, Git, and DVC."
@@ -123,7 +123,7 @@ This month, DVC got a mention in a just-released O'Reilly book,
 ["Building Machine Learning Pipelines"](https://www.oreilly.com/library/view/building-machine-learning/9781492053187/)
 by Hannes Hapke and Catherine Nelson.
 
-<external-link
+<ExternalLink
 href="https://www.oreilly.com/library/view/building-machine-learning/9781492053187/"
 title="Building Machine Learning Pipelines"
 description="Automating Model Life Cycles with TensorFlow"

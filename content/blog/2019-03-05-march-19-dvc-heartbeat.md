@@ -36,7 +36,7 @@ checking.
 - **[Data science is different now](https://veekaybee.github.io/2019/02/13/data-science-is-different/)
   by [Vicki Boykis](https://veekaybee.github.io/)**
 
-<external-link
+<ExternalLink
 href="https://veekaybee.github.io/2019/02/13/data-science-is-different/"
 title="Data science is different now"
 description="Woman holding a balance, Vermeer 1664 What do you think of when you read the phrase 'data science'? It's probably some…"
@@ -52,7 +52,7 @@ image="/uploads/images/2019-03-05/data-science-is-different-now.png" />
 - **[Data Versioning](https://emilygorcenski.com/post/data-versioning/) by
   [Emily F. Gorcenski](https://emilygorcenski.com/)**
 
-<external-link
+<ExternalLink
 href="https://emilygorcenski.com/post/data-versioning/"
 title="Data Versioning"
 description="Productionizing machine learning/AI/data science is a challenge. Not only are the outputs of machine-learning…"
@@ -67,7 +67,7 @@ image="/uploads/images/2019-03-05/data-versioning.jpeg" />
 - **[Reproducibility in Machine Learning](https://blog.mi.hdm-stuttgart.de/index.php/2019/02/26/reproducibility-in-ml/)
   by [Pascal Fecht](https://blog.mi.hdm-stuttgart.de/index.php/author/pf023/)**
 
-<external-link
+<ExternalLink
 href="https://emilygorcenski.com/post/data-versioning/"
 title="Reproducibility in Machine Learning | Computer Science Blog"
 description="The rise of Machine Learning has led to changes across all areas of computer science. From a very abstract point of…"

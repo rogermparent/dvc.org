@@ -33,7 +33,7 @@ open-source tools to version control ML models and experiments.
 [Standard Cognition](https://standard.ai/) to discuss best ML practices. Join us
 and save your spot now:
 
-<external-link
+<ExternalLink
 href="https://www.meetup.com/San-Francisco-Machine-Learning-Meetup/events/264846847/"
 title="Open-source tools to version control Machine Learning models and experiments"
 description="AI and ML are becoming an essential part of the engineering and data science everyday workflow. ML teams need new tools…"
@@ -94,7 +94,7 @@ discovered in July and August:
 
 > It is possible to manage your work flow using open-source and free tools.
 
-<external-link
+<ExternalLink
 href="https://medium.com/ixorthink/our-machine-learning-workflow-dvc-mlflow-and-training-in-docker-containers-5b9c80cdf804"
 title="Our Machine Learning Workflow: DVC, MLFlow and Training in Docker Containers"
 description="Googling for machine learning frameworks to version data, track python models etc.. I was surprised to see that these…"
@@ -108,7 +108,7 @@ image="/uploads/images/2019-09-26/our-machine-learning-workflow.jpeg" />
 > the VAT auto-detection project and this drastically increased our
 > **productivity**.
 
-<external-link
+<ExternalLink
 href="https://medium.com/qonto-engineering/using-dvc-to-create-an-efficient-version-control-system-for-data-projects-96efd94355fe"
 title="Using DVC to create an efficient version control system for data projects"
 description="At first we were looking for a tool to help us dealing with production data files such as trained machine learning…"
@@ -122,7 +122,7 @@ image="/uploads/images/2019-09-26/using-dvc-to-create-an-efficient-vcs.png" />
 > DVC works in a machine learning project, how it optimizes reproducing results
 > when the project is changed, and how to share the project with colleagues.
 
-<external-link
+<ExternalLink
 href="https://techsparx.com/software-development/ai/dvc/versioning-example.html"
 title="Managing versioned machine learning datasets in DVC, and easily share ML projects with colleagues"
 description="Software Development Artificial Intelligence Data Version Control (DVC) Managing versioned machine learning datasets in…"
@@ -137,7 +137,7 @@ image="/uploads/images/2019-09-26/managing-versioned-machine-learning-datasets.j
 > amount of data increasing over time either through an active learning cycle or
 > by manually adding new data.
 
-<external-link
+<ExternalLink
 href="https://towardsdatascience.com/how-to-use-data-version-control-dvc-in-a-machine-learning-project-a78245c0185"
 title="How to use data version control (dvc) in a machine learning project"
 description="When working in a productive machine learning project you probably deal with a tone of data and several models. To keep…"
@@ -150,7 +150,7 @@ image="/uploads/images/2019-09-26/how-to-use-data-version-control.jpeg" />
 > This post presents a solution to version control machine learning models with
 > git and dvc ([Data Version Control](https://dvc.org/doc/tutorial)).
 
-<external-link
+<ExternalLink
 href="https://towardsdatascience.com/version-control-ml-model-4adb2db5f87c"
 title="Version Control ML Model"
 description="Machine Learning operations (let’s call it MLOps under the current buzzword pattern xxOps) are quite different from…"
@@ -164,7 +164,7 @@ image="/uploads/images/2019-09-26/version-control-ml-model.png" />
 > stuff in modern file systems (reflinks), and an example of how DVC (Data
 > Version Control, [https://dvc.org/](https://dvc.org/)) leverages this.
 
-<external-link
+<ExternalLink
 href="https://towardsdatascience.com/version-control-ml-model-4adb2db5f87c"
 title="Reflinks vs symlinks vs hard links, and how they can help machine learning projects"
 description="Hard links and symbolic links have been available since time immemorial, and we use them all the time without even…"
@@ -181,7 +181,7 @@ image="/uploads/images/2019-09-26/reflinks-vs-symlinks-vs-hard-links.jpeg" />
 > this follow-up is about importing specific versions of an artifact (e.g. a
 > trained model or a dataset) from one DVC project into another.
 
-<external-link
+<ExternalLink
 href="https://blog.codecentric.de/en/2019/08/dvc-dependency-management/"
 title="DVC dependency management - a guide - codecentric AG Blog"
 description="This post is a follow-up to A walkthrough of DVC that deals with managing dependencies between DVC projects. In…"
@@ -194,7 +194,7 @@ image="/uploads/images/2019-09-26/dvc-org.png" />
 > In this post I’ll present lessons learned on how to setup successful ML teams
 > and what you need to devise an effective enterprise ML strategy.
 
-<external-link
+<ExternalLink
 href="https://medium.com/@czeslaw.szubert/effective-ml-teams-lessons-learned-6a6e761bc283"
 title="Effective ML Teams — Lessons Learned"
 description="Machine Learning and Artificial Intelligence has entered our everyday lives — from Virtual Assistants built into each…"
@@ -207,7 +207,7 @@ image="/uploads/images/2019-09-26/effective-ml-teams.jpeg" />
 > Setting up a documentation-by-design workflow and using appropriate tools
 > where needed, e.g. _MLFlow_ and _dvc,_ can be a real deal-breaker.
 
-<external-link
+<ExternalLink
 href="https://medium.com/@czeslaw.szubert/effective-ml-teams-lessons-learned-6a6e761bc283"
 title="Lessons Learned from Training a German Speech Recognition Model - esentri AG"
 description="This post is the first of a two-part series. In this first part, I address learnings from a recent project in which I…"

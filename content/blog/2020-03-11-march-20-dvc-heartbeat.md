@@ -81,7 +81,7 @@ startup Zymergen, and formerly Twitter). Dmitry wrote:
 
 Check out the full blog here:
 
-<external-link
+<ExternalLink
 href="https://medium.com/@squarecog/five-interesting-data-engineering-projects-48ffb9c9c501"
 title="Five Interesting Data Engineering Projects"
 description="There’s been a lot of activity in the data engineering world lately, and a ton of really interesting projects and ideas have come on the scene in the past few years. This post is an introduction to (just) five that I think a data engineer who wants to stay current needs to know about."
@@ -99,7 +99,7 @@ engineers "not only how to implement Python in data science projects, but also
 how to maintain and design them to meet high programming standards." Needless to
 say, we are considering starting a book club. Grab a copy here:
 
-<external-link
+<ExternalLink
 href="https://www.packtpub.com/programming/learn-python-by-building-data-science-applications"
 title="Learn Python by Building Data Science Applications"
 description="Understand the constructs of the Python programming language and use them to build data science projects"
@@ -113,7 +113,7 @@ Monterrey—and
 now online! In this Spanish-language talk, Ramón gives a thorough look at DVC,
 particularly building pipelines for reproducible ML.
 
-<external-link
+<ExternalLink
 href="https://www.youtube.com/watch?v=tAxG-n20Di4"
 title="Experimentación ágil de machine learning con DVC"
 description="Data Day Monterrey '19"
@@ -126,7 +126,7 @@ posts from the Reddit forum
 preliminary analyses. We're inviting anyone and everyone to play with the data,
 make some hypotheses and share their findings. Check it out here:
 
-<external-link
+<ExternalLink
 href="https://blog.dvc.org/a-public-reddit-dataset"
 title="AITA for making this? A public dataset of Reddit posts about moral dilemmas"
 description="Delve into an open natural language dataset of posts about moral dilemmas from r/AmItheAsshole. Use this dataset for whatever you want- here's how to get it and start playing."

@@ -80,7 +80,7 @@ Here are some of the links that caught our eye past month:
 > practices from Continuous Delivery, we can better manage the risks of
 > releasing changes to Machine Learning applications in a safe and reliable way.
 
-<external-link
+<ExternalLink
 href="https://martinfowler.com/articles/cd4ml.html"
 title="Continuous Delivery for Machine Learning"
 description="bio I am a consultant at ThoughtWorks Germany, where I am leading our data and machine learning activities. I enjoy…"
@@ -95,7 +95,7 @@ image="/uploads/images/2019-11-05/continuous-delivery-for-machine-learning.png" 
 > to build the machine learning ecosystem to train our models efficiently and
 > not die trying? At **Signaturit**, we have the solution ;)
 
-<external-link
+<ExternalLink
 href="https://medium.com/signaturit-tech-blog/the-path-to-identity-validation-2-3-4f698b2ffae9"
 title="The Path to Identity Validation (2/3)"
 description="How to start your own machine learning project?"
@@ -126,7 +126,7 @@ https://youtu.be/4XpHk85_x0E
 > tracking used to look like, the current Weights & Biases business success
 > strategy, and what his team is working on today.
 
-<external-link
+<ExternalLink
 href="https://twimlai.com/twiml-talk-295-managing-deep-learning-experiments-with-lukas-biewald/"
 title="Managing Deep Learning Experiments with Lukas Biewald — Talk #295"
 description="Today we are joined by Lukas Biewald, CEO and Co-Founder of Weights & Biases. Lukas, previously CEO and Founder of…"

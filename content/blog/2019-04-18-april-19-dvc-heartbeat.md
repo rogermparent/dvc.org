@@ -52,7 +52,7 @@ Here is a number of interesting reads that caught our eye:
 - **[A walkthrough of DVC](https://blog.codecentric.de/en/2019/03/walkthrough-dvc/)
   by [Bert Besser](https://www.linkedin.com/in/bert-besser-284564182/)**
 
-<external-link
+<ExternalLink
 href="https://blog.codecentric.de/en/2019/03/walkthrough-dvc/"
 title="A walkthrough of DVC — codecentric AG Blog"
 description="This post is on how to systematially organize Machine Learning (ML) model development. A model’s performance improves…"
@@ -66,7 +66,7 @@ comprehensive read on why you should do so right away.
 - **[The state of machine learning operations](https://github.com/EthicalML/state-of-mlops-2019)
   by [Alejandro Saucedo](https://www.linkedin.com/in/axsaucedo/)**
 
-<external-link
+<ExternalLink
 href="https://github.com/EthicalML/state-of-mlops-2019"
 title="The state of machine learning operations"
 description="Contribute to EthicalML/state-of-mlops-2019 development by creating an account on GitHub."
@@ -82,7 +82,7 @@ of ML operations.
 - **[Interview with Kaggle Grandmaster, Senior Computer Vision Engineer at Lyft: Dr. Vladimir I. Iglovikov](https://hackernoon.com/interview-with-kaggle-grandmaster-senior-cv-engineer-at-lyft-dr-vladimir-i-iglovikov-9938e1fc7c)
   by [Sanyam Bhutani](https://twitter.com/bhutanisanyam1)**
 
-<external-link
+<ExternalLink
 href="https://hackernoon.com/interview-with-kaggle-grandmaster-senior-cv-engineer-at-lyft-dr-vladimir-i-iglovikov-9938e1fc7c"
 title="Interview with Kaggle Grandmaster, Senior Computer Vision Engineer at Lyft: Dr. Vladimir I. Iglovikov"
 description="Part 24 of The series where I interview my heroes."

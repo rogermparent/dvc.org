@@ -42,14 +42,14 @@ talks and we will run a booth. So looking forward to it! Stop by for a chat and
 some cool swag. And if you are in San Diego on those days and want to catch up —
 please let us know [here](http://dvc.org/support) or on Twitter!
 
-<external-link
+<ExternalLink
 href="https://ossna19.sched.com/event/PUVv/open-source-tools-for-ml-experiments-management-dmitry-petrov-ruslan-kuprieiev-iterative-ai"
 title="Open Source Summit + ELC North America 2019: Open Source Tools for ML Experiments Man..."
 description="Speakers Software Engineer, Iterative AI Ruslan is a Software Engineer at Iterative AI. Previously he worked on live…"
 link="ossna19.sched.com"
 image="/uploads/images/2019-08-01/open-source-north-america-summit.png" />
 
-<external-link
+<ExternalLink
 href="https://ossna19.sched.com/event/PWNk/speaker-preparation-simple-steps-with-a-tremendous-impact-svetlana-grinchenko-dvcorg"
 title="Open Source Summit + ELC North America 2019: Speaker Preparation: Simple Steps with a..."
 description="Speakers Head of Developer Relations, DVC.org Svetlana is driving developer relations and community at DVC.org…"
@@ -63,7 +63,7 @@ our eye in June:
 - **[Principled Machine Learning: Practices and Tools for Efficient Collaboration](https://dev.to/robogeek/principled-machine-learning-4eho)
   by [David Herron](https://medium.com/@7genblogger)**
 
-<external-link
+<ExternalLink
 href="https://dev.to/robogeek/principled-machine-learning-4eho"
 title="Principled Machine Learning: Practices and Tools for Efficient Collaboration"
 description="Machine learning projects are often harder than they should be. The code to train an ML model is just software, and we…"
@@ -79,7 +79,7 @@ image="/uploads/images/2019-08-01/principled-machine-learning.jpeg" />
   hosted by [Raiffeisen DGTL](https://www.raiffeisen-digital.ru/?utm_referrer=)
   — check out the video and slide decks.**
 
-<external-link
+<ExternalLink
 href="http://ml-repa.ru/"
 title="Machine Learning REPA"
 description="Анонсы мероприятий, проектов, обзоров инструментов и кейсов про ML проекты, управление экспериментами, автоматизацию и…"

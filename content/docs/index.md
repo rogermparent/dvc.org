@@ -1,7 +1,3 @@
----
-template: 'doc-home'
----
-
 # DVC Documentation
 
 Welcome! In here you may find all the guiding material and technical documents
@@ -22,38 +18,36 @@ improve this [documentation](https://github.com/iterative/dvc.org) 🙏.
 
 ## Main topics
 
-<cards>
+<Cards>
 
-<card>
-
-Learn how to [install](/doc/install) and
+  <Card>
+  
+ Learn how to [install](/doc/install) and
 [get started](/doc/tutorials/get-started) with DVC in the first sections
-
-</card>
-
-<card icon="true">
-
+     
+  </Card>
+  
+  <Card icon="true">
+  
 ![](/img/home_placeholder.svg)
-
 Explore the main [reasons](/doc/use-cases) to adopt DVC
-
-</card>
-
-<card>
-
+    
+  </Card>
+  
+  <Card>
+  
 Study the detailed [inner-workings](/doc/user-guide) of DVC in its user guide
+    
+  </Card>
+  
+  <Card icon="true" heading="With heading and image">
+  
+[](/img/home_placeholder.svg)
 
-</card>
+View the [CLI](/doc/command-reference) and [Python](/doc/api-reference) APIs  
+ </Card>
 
-<card icon="true" heading="With heading and image">
-
-![](/img/home_placeholder.svg)
-
-View the [CLI](/doc/command-reference) and [Python](/doc/api-reference) APIs
-
-</card>
-
-</cards>
+</Cards>
 
 Please choose a topic from the sidebar to the left, or click the `Next` button
 below to start from the beginning ↘

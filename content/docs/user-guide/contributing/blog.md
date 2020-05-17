@@ -110,12 +110,12 @@ https://youtu.be/4h6I9_xeYA4
 And now lets move onto ...
 ```
 
-You can ember a preview of any other website using `<external-link>` tag:
+You can embed a preview of any other website using `<ExternalLink>` tag:
 
 ```md
 ... Check out this great project:
 
-<external-link
+<ExternalLink
 href="https://dvc.org/doc"
 title="Open-source tools to version control Machine Learning models and experiments"
 description="AI and ML are becoming an essential part of the engineering..."

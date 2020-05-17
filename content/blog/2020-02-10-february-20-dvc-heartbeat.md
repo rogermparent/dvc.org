@@ -38,21 +38,21 @@ We're **gearing up for a spring full of talks** about DVC projects, including
 new up-and-coming features for data cataloging and continuous integration. Here
 are just a few events that have been added to our schedule:
 
-<external-link
+<ExternalLink
 href="https://www.mlprague.com/#schedule-saturday"
 title="Machine Learning Prague - March 19"
 description="DVC engineer Pawel Redzynski will talk about open source tools for versioning machine learning projects."
 link="mlprague.com"
 image="/uploads/images/2020-02-10/mlprague.jpg" />
 
-<external-link
+<ExternalLink
 href="https://www.mlprague.com/#schedule-saturday"
 title="DivOps 2020 - March 24"
 description="Elle O'Brien is talking about open source software in the growing field of MLOps at this international, remote conference."
 link="https://divops.org/"
 image="/uploads/images/2020-02-10/divops_logo.png" />
 
-<external-link
+<ExternalLink
 href="https://www.mlprague.com/#schedule-saturday"
 title="Women in Data Science San Diego - May 9"
 description="Elle O'Brien will be delivering a keynote talk about data catalogs and feature stores."
@@ -75,7 +75,7 @@ events, goings-ons, and ways to contribute to DVC.
 Our users continue to put awesome things on the internet. Like this AI blogger
 who isn't afraid to wear his heart on his sleeve.
 
-<external-link
+<ExternalLink
 href="https://medium.com/@matlihan/my-favorite-data-science-tool-is-dvc-data-version-control-e6ab8aed24d2"
 title="My favorite data science tool is DVC - Data Version Control"
 description="by Musa Atlıhan"
@@ -107,7 +107,7 @@ remote computing resources** like GCP and AWS. It's an excellent guide to
 configuring model training with attention to _automation_ and _collaboration_.
 We give them 🦉🦉🦉🦉🦉 out of 5.
 
-<external-link
+<ExternalLink
 href="https://blog.codecentric.de/en/2020/01/remote-training-gitlab-ci-dvc/"
 title="Remote training with GitLab-CI and DVC"
 description="by Marcel Mikl and Bert Besser"
