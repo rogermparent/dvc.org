@@ -124,7 +124,7 @@ data science and MLOps space:
   agree with very much 😏). The graphics are also 💯- Tania is a developer
   advocate to follow.
 
-<external-link
+<ExternalLink
 href="https://dev.to/azure/10-top-tips-for-reproducible-machine-learning-36g0"
 title="10 top tips for reproducible Machine Learning"
 description="The one where you get some advice to make your workflows more reproducible"
@@ -139,7 +139,7 @@ image="/uploads/images/2020-05-14/dev_logo.png"/>
   flexibility is going to be needed. It's a solid overview of how to begin
   thinking about MLOps at a high level.
 
-<external-link
+<ExternalLink
 href="https://medium.com/acing-ai/ml-ops-data-science-version-control-5935c49d1b76"
 title="ML Ops: Data Science Version Control"
 description="Data versioning primer for model, data and code."
@@ -154,7 +154,7 @@ image="/uploads/images/2020-05-14/acing_ai.png"/>
   to try at home. Stay till the end for a neat trick about deploying a model as
   a web service with Pipenv and DVC.
 
-<external-link
+<ExternalLink
 href="https://www.autoregressed.com/blog/pipenv-and-dvc-reproducibility-in-data-science"
 title="Pipenv and DVC: Reproducibility in Data Science"
 description="Without standards and tools to easily reproduce models, Data Science teams can become bogged down in technical debt that will make it difficult to deploy and iterate on models. "
