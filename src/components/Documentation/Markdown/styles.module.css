@@ -346,30 +346,31 @@
   flex-flow: column nowrap;
   margin: 1rem 0;
 
-  > div {
-    padding: 0.5rem 0.1rem;
-  }
-
   @media screen and (min-width: 1024px) {
     margin: 2rem -0.5rem;
     flex-flow: row wrap;
 
-    > div {
-      flex: 1 0 50%;
-      padding: 0.5rem;
-      height: 7rem;
-    }
-
     .card {
-      height: 100%;
+      padding: 0.3rem;
+      margin: 0;
+      flex: 1 0 50%;
+
+      .cardInner {
+        padding: 0.5rem;
+        height: 7rem;
+      }
     }
   }
 }
 
 .card {
+  margin: 0.5rem 0;
+}
+
+.cardInner {
   border: 1px solid gray;
   border-radius: 10px;
-  padding: 0.75rem;
+  padding: 0.5rem;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;

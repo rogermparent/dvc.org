@@ -29,19 +29,7 @@ const Abbr: React.FC<{ children: [string] }> = ({ children }) => {
 const Cards: React.FC<{
   children: Array<object | string>
 }> = ({ children }) => {
-  return (
-    <div className={styles.cards}>
-      {Array.isArray(children)
-        ? children.reduce(
-            (acc: Array<object>, child, i) =>
-              typeof child === 'object'
-                ? [...acc, <div key={i}>{child}</div>]
-                : acc,
-            []
-          )
-        : children}
-    </div>
-  )
+  return <div className={styles.cards}>{children}</div>
 }
 
 const Card: React.FC<{
@@ -55,17 +43,20 @@ const Card: React.FC<{
       }>
 }> = ({ children, icon, heading, headingtag: Heading = 'h3' }) => {
   let iconElement
-  if (Array.isArray(children) && icon) {
-    const firstRealItemIndex = children.findIndex(x => x !== '\n')
-    iconElement = children[firstRealItemIndex]
-    children = children.slice(firstRealItemIndex + 1)
+  if (icon) {
+    iconElement = children[0]
+    children = children.slice(1)
   }
   return (
     <div className={styles.card}>
-      {iconElement && <div className={styles.cardIcon}>{iconElement}</div>}
-      <div className={styles.cardContent}>
-        {heading && <Heading className={styles.cardHeading}>{heading}</Heading>}
-        {children}
+      <div className={styles.cardInner}>
+        {iconElement && <div className={styles.cardIcon}>{iconElement}</div>}
+        <div className={styles.cardContent}>
+          {heading && (
+            <Heading className={styles.cardHeading}>{heading}</Heading>
+          )}
+          {children}
+        </div>
       </div>
     </div>
   )
