@@ -66,7 +66,10 @@ const Post: React.FC<IBlogPostData> = ({
             <div className={styles.headContent}>
               <h1 className={styles.title}>{title}</h1>
               {descriptionLong ? (
-                <div className={styles.description}>{descriptionLong}</div>
+                <div
+                  className={styles.description}
+                  dangerouslySetInnerHTML={{ __html: descriptionLong }}
+                />
               ) : (
                 <div className={styles.description}>{description}</div>
               )}

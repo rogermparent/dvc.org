@@ -1,11 +1,10 @@
 import React, { useCallback, useEffect, useRef } from 'react'
 import cn from 'classnames'
 import { navigate } from '@reach/router'
+import { MDXProvider } from '@mdx-js/react'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
-import Collapsible from 'react-collapsible'
 
 import Link from '../../Link'
-import Tooltip from './Tooltip'
 import Tutorials from '../TutorialsLinks'
 import { getPathWithSource } from '../../../utils/shared/sidebar'
 
@@ -29,84 +28,7 @@ const isInsideCodeBlock = (node: Element): boolean => {
   return false
 }
 
-const Details: React.FC<{
-  children: Array<{ props: { children: Array<string> } } | string>
-}> = ({ children }) => {
-  const filteredChildren = children.filter(child => child !== '\n')
-
-  if (!filteredChildren.length) return null
-  if (typeof filteredChildren[0] === 'string') return null
-
-  const text = filteredChildren[0].props.children[0]
-
-  return (
-    <Collapsible trigger={text} transitionTime={200}>
-      {filteredChildren.slice(1)}
-    </Collapsible>
-  )
-}
-
-const Abbr: React.FC<{ children: [string] }> = ({ children }) => {
-  return <Tooltip text={children[0]} />
-}
-
-const Cards: React.FC<{
-  children: Array<object | string>
-}> = ({ children }) => {
-  return (
-    <div className={styles.cards}>
-      {Array.isArray(children)
-        ? children.reduce(
-            (acc: Array<object>, child, i) =>
-              typeof child === 'object'
-                ? [...acc, <div key={i}>{child}</div>]
-                : acc,
-            []
-          )
-        : children}
-    </div>
-  )
-}
-
-const Card: React.FC<{
-  children: Array<object | string> | object | string
-  icon?: string
-  heading?: string
-  headingtag:
-    | string
-    | React.FC<{
-        className: string
-      }>
-}> = ({ children, icon, heading, headingtag: Heading = 'h3' }) => {
-  let iconElement
-  if (Array.isArray(children) && icon) {
-    const firstRealItemIndex = children.findIndex(x => x !== '\n')
-    iconElement = children[firstRealItemIndex]
-    children = children.slice(firstRealItemIndex + 1)
-  }
-  return (
-    <div className={styles.card}>
-      {iconElement && <div className={styles.cardIcon}>{iconElement}</div>}
-      <div className={styles.cardContent}>
-        {heading && <Heading className={styles.cardHeading}>{heading}</Heading>}
-        {children}
-      </div>
-    </div>
-  )
-}
-
-const renderAst = new rehypeReact({
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  createElement: React.createElement as any,
-  Fragment: React.Fragment,
-  components: {
-    details: Details,
-    abbr: Abbr,
-    a: Link,
-    card: Card,
-    cards: Cards
-  }
-}).Compiler
+import components from './components'
 
 interface IMarkdownProps {
   body: string
@@ -172,7 +94,9 @@ const Markdown: React.FC<IMarkdownProps> = ({
         GitHub
       </Link>
       <div className="markdown-body">
-        <MDXRenderer>{body}</MDXRenderer>
+        <MDXProvider components={components}>
+          <MDXRenderer>{body}</MDXRenderer>
+        </MDXProvider>
       </div>
       <div className={styles.navButtons}>
         <Link className={styles.navButton} href={prev || '#'}>
