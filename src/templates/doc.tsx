@@ -10,7 +10,7 @@ import Documentation from '../components/Documentation'
 interface IDocPageProps {
   data: {
     page: {
-      htmlAst: Node
+      body: string
     }
   }
   pageContext: {
@@ -24,7 +24,7 @@ const DocPage: React.FC<IDocPageProps> = ({
   pageContext: { slug, headings }
 }) => {
   const {
-    page: { htmlAst }
+    page: { body }
   } = data
 
   const { label } = getItemByPath(slug)
@@ -32,7 +32,7 @@ const DocPage: React.FC<IDocPageProps> = ({
   return (
     <>
       <SEO title={label} />
-      <Documentation htmlAst={htmlAst} path={slug} headings={headings} />
+      <Documentation body={body} path={slug} headings={headings} />
     </>
   )
 }
@@ -42,7 +42,7 @@ export default DocPage
 export const pageQuery = graphql`
   query DocPage($id: String!) {
     page: docsPage(id: { eq: $id }) {
-      htmlAst
+      body
     }
   }
 `
