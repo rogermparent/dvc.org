@@ -20,32 +20,38 @@ improve this [documentation](https://github.com/iterative/dvc.org) 🙏.
 
 <Cards>
 
-  <Card>
-  
- Learn how to [install](/doc/install) and
-[get started](/doc/tutorials/get-started) with DVC in the first sections
-     
-  </Card>
-  
-  <Card icon="true">
-  
-![](/img/home_placeholder.svg)
-Explore the main [reasons](/doc/use-cases) to adopt DVC
-    
-  </Card>
-  
-  <Card>
-  
-Study the detailed [inner-workings](/doc/user-guide) of DVC in its user guide
-    
-  </Card>
-  
-  <Card icon="true" heading="With heading and image">
-  
-[](/img/home_placeholder.svg)
+<Card icon="true">
 
-View the [CLI](/doc/command-reference) and [Python](/doc/api-reference) APIs  
- </Card>
+![](/img/home_placeholder.svg)
+
+Learn how to [install](/doc/install) and
+[get started](/doc/tutorials/get-started) with DVC in the first sections
+
+</Card>
+
+<Card icon="true">
+
+![](/img/home_placeholder.svg)
+
+Explore the main [reasons](/doc/use-cases) to adopt DVC
+
+</Card>
+
+<Card icon="true">
+
+![](/img/home_placeholder.svg)
+
+Study the detailed [inner-workings](/doc/user-guide) of DVC in its user guide
+
+</Card>
+
+<Card icon="true">
+
+![](/img/home_placeholder.svg)
+
+View the [CLI](/doc/command-reference) and [Python](/doc/api-reference) APIs
+
+</Card>
 
 </Cards>
 
