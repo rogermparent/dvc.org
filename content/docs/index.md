@@ -19,40 +19,35 @@ improve this [documentation](https://github.com/iterative/dvc.org) 🙏.
 ## Main topics
 
 <Cards>
-
-<Card icon="true">
+  <Card icon="true">
 
 ![](/img/home_placeholder.svg)
 
 Learn how to [install](/doc/install) and
 [get started](/doc/tutorials/get-started) with DVC in the first sections
 
-</Card>
-
-<Card icon="true">
+  </Card>
+  <Card icon="true">
 
 ![](/img/home_placeholder.svg)
 
 Explore the main [reasons](/doc/use-cases) to adopt DVC
 
-</Card>
-
-<Card icon="true">
+  </Card>
+  <Card icon="true">
 
 ![](/img/home_placeholder.svg)
 
 Study the detailed [inner-workings](/doc/user-guide) of DVC in its user guide
 
-</Card>
-
-<Card icon="true">
+  </Card>
+  <Card icon="true">
 
 ![](/img/home_placeholder.svg)
 
 View the [CLI](/doc/command-reference) and [Python](/doc/api-reference) APIs
 
-</Card>
-
+  </Card>
 </Cards>
 
 Please choose a topic from the sidebar to the left, or click the `Next` button
