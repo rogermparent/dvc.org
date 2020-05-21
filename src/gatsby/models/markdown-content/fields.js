@@ -1,7 +1,4 @@
-const {
-  parentResolverPassthrough,
-  parentPassthrough
-} = require('gatsby-plugin-parent-resolvers')
+const { parentResolverPassthrough } = require('gatsby-plugin-parent-resolvers')
 
 module.exports = {
   body: {

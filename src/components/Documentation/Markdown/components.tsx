@@ -33,7 +33,6 @@ const Cards: React.FC<{
 }
 
 const Card: React.FC<{
-  children: Array<object | string> | object | string
   icon?: string
   heading?: string
   headingtag:
@@ -43,10 +42,13 @@ const Card: React.FC<{
       }>
 }> = ({ children, icon, heading, headingtag: Heading = 'h3' }) => {
   let iconElement
-  if (icon) {
-    iconElement = children[0]
-    children = children.slice(1)
+
+  if (icon && children) {
+    const childrenArr = Array.isArray(children) ? children : [children]
+    iconElement = childrenArr[0]
+    children = childrenArr.slice(1)
   }
+
   return (
     <div className={styles.card}>
       <div className={styles.cardInner}>

@@ -19,7 +19,6 @@ import PageContent from '../../PageContent'
 import SubscribeSection from '../../SubscribeSection'
 
 import styles from './styles.module.css'
-const { MDXRenderer } = 'gatsby-plugin-mdx'
 
 const Post: React.FC<IBlogPostData> = ({
   body,
