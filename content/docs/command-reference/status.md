@@ -216,8 +216,8 @@ differences between the <abbr>cache</abbr> and `storage` remote.
 
 ## Example: Import stage
 
-Let's import a data file (`data.csv`) from a different <abbr>DVC repository
-</abbr> into our current project using `dvc import`.
+Let's import a data file (`data.csv`) from a different <abbr>DVC
+repository</abbr> into our current project using `dvc import`.
 
 ```dvc
 $ dvc import different/repo/location data.csv
